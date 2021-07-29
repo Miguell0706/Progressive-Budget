@@ -29,6 +29,8 @@ app.use(require("./routes/api.js"));
 app.get("*", (request, response) => {
   response.sendFile(path.join(__dirname, "public", "index.html"));
 });
+
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
+ 
